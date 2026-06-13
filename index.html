@@ -43,6 +43,34 @@
       content="Discover nearby kitchens, order today's specials, track your meal live. Pay by UPI/QR or cash."
     />
     <meta name="twitter:image" content="https://gallieats.com/og.svg" />
+    <meta property="og:locale" content="en_IN" />
+    <meta name="application-name" content="GalliEats" />
+
+    <!-- Structured data: helps Google recognise the GalliEats brand + show rich results -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Organization",
+            "@id": "https://gallieats.com/#org",
+            "name": "GalliEats",
+            "url": "https://gallieats.com",
+            "logo": "https://gallieats.com/favicon.svg",
+            "description": "GalliEats is a hyperlocal food-ordering platform to discover nearby home-style restaurants, order full or half plates, and track delivery live."
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://gallieats.com/#website",
+            "name": "GalliEats",
+            "alternateName": "Galli Eats",
+            "url": "https://gallieats.com",
+            "publisher": { "@id": "https://gallieats.com/#org" },
+            "inLanguage": "en-IN"
+          }
+        ]
+      }
+    </script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -52,7 +80,19 @@
     />
   </head>
   <body>
-    <div id="root"></div>
+    <div id="root">
+      <!-- SEO fallback: shown to crawlers / before the React app mounts. React replaces this. -->
+      <main style="max-width:720px;margin:40px auto;padding:0 20px;font-family:system-ui,sans-serif">
+        <h1>GalliEats — Order home-style food from your galli</h1>
+        <p>
+          GalliEats is a hyperlocal food delivery app. Discover nearby home-style restaurants,
+          browse today's menu, order full or half plates, and track your delivery with a live ETA.
+          Pay the owner directly by UPI/QR or cash.
+        </p>
+        <p>Loading the app… If it doesn't load, please enable JavaScript.</p>
+        <a href="/login">Log in</a> · <a href="/register">Sign up</a>
+      </main>
+    </div>
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
