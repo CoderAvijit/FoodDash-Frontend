@@ -1,0 +1,9 @@
+{
+  "rewrites": [
+    {
+      "source": "/api/:path*",
+      "destination": "https://fooddash-backend-production.up.railway.app/:path*"
+    },
+    { "source": "/:path*", "destination": "/index.html" }
+  ]
+}

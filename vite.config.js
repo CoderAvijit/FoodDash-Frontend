@@ -8,5 +8,14 @@ export default defineConfig({
     host: "127.0.0.1",
     port: 8081,
     strictPort: true,
+    // Local dev: proxy "/api/*" to a backend on localhost:8080 (strip the /api prefix),
+    // mirroring the Vercel rewrite so the same code path works everywhere.
+    proxy: {
+      "/api": {
+        target: "http://localhost:8080",
+        changeOrigin: true,
+        rewrite: (path) => path.replace(/^\/api/, ""),
+      },
+    },
   },
 });

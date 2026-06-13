@@ -1,7 +1,8 @@
 import axios from "axios";
 
-const BASE_URL =
-  import.meta.env.VITE_API_BASE_URL || "https://fooddash-backend-production.up.railway.app";
+// Same-origin path; Vercel (prod) and Vite (dev) proxy "/api" to the real backend,
+// so the backend URL is never exposed to the browser and there's no CORS.
+const BASE_URL = import.meta.env.VITE_API_BASE_URL || "/api";
 
 const STORAGE_KEY = "fooddash.auth";
 
