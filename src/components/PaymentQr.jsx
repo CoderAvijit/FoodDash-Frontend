@@ -60,7 +60,7 @@ export default function PaymentQr({ order }) {
               />
               <p className="text-sm font-semibold text-ink-700">Scan to pay {qr.restaurantName}</p>
               <p className="text-lg font-extrabold text-brand-700">₹{Number(order.total).toFixed(2)}</p>
-              <p className="text-xs text-ink-500">Paid directly to the owner — FoodDash doesn't handle the money.</p>
+              <p className="text-xs text-ink-500">Paid directly to the owner — GalliEats doesn't handle the money.</p>
             </div>
           )}
         </div>

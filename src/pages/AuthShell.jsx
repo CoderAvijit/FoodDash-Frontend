@@ -12,7 +12,7 @@ export default function AuthShell({ title, subtitle, children }) {
           Good food is just a few taps away.
         </h2>
         <p className="mt-3 text-white/90">
-          Join FoodDash to discover nearby kitchens, order today's specials, and track your meal in
+          Join GalliEats to discover nearby kitchens, order today's specials, and track your meal in
           real time.
         </p>
         <ul className="mt-8 space-y-3 text-sm text-white/90">

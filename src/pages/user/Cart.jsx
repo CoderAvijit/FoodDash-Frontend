@@ -120,7 +120,7 @@ export default function Cart() {
           ))}
         </div>
         <p className="mt-2 text-xs text-ink-500">
-          FoodDash doesn't process payments — you'll pay {payment === "QR" ? "by scanning the owner's QR" : "in cash"} on delivery.
+          GalliEats doesn't process payments — you'll pay {payment === "QR" ? "by scanning the owner's QR" : "in cash"} on delivery.
         </p>
       </div>
 

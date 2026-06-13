@@ -1,0 +1,17 @@
+{
+  "name": "GalliEats",
+  "short_name": "GalliEats",
+  "description": "Order home-style food from your galli — nearby kitchens, live ETA, pay by UPI/QR or cash.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#fffbf6",
+  "theme_color": "#ea580c",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

@@ -26,7 +26,7 @@ export default function NavBar() {
             <FiShoppingBag />
           </span>
           <span className="text-lg font-extrabold tracking-tight">
-            Food<span className="text-brand-600">Dash</span>
+            Galli<span className="text-brand-600">Eats</span>
           </span>
         </Link>
 

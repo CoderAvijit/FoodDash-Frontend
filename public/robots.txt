@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://food-dash-frontend-gold.vercel.app/sitemap.xml
